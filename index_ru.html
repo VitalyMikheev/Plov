@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Pilaf_monaco</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<section class="main">
+		<div class="container">
+			<div class="menu">
+				<div class="logo">
+					<p class="logo_head">Pilaf_monaco</p>
+					<p class="logo_text">готовим для друзей</p>
+				</div>
+				<ul class="list">
+					<li class="list-item call_icon">
+						<img class="phone_img"src="img/phone.svg">
+						<p class="phone_text">+0 1234567890</p>
+					</li>
+					<li class="list-item">
+						<div class="language">
+							<div class="language_box">
+								<p class="language_text">Ru</p>
+								<img class="language_selector" src="img/chevron-down.svg">
+								<img class="language_selector_active hidden" src="img/chevron-down_active.svg">
+							</div>
+						</div>
+					</li>
+					<li class="list-item">
+						<div class="phone_box">
+							<img class="phone_img"src="img/phone.svg">
+						</div>					
+					</li>
+				</ul>
+			</div>
+			<div class="dish">
+				<div class="dish_main">
+					<div class="dish_wrap">
+						<h1 class="dish_head">Готовим и доставляем настоящие <span>Узбекские блюда</span></h1>
+						<h1 class="dish_head_small">Готовим и доставляем настоящие <span>Узбекские блюда</span> на лазурном побережье Франции и Лигурийской Ривьеры</h1>
+						<p class="dish_wrap_text">на лазурном побережье Франции и Лигурийской Ривьеры</p>
+					</div>
+					<div class="dish_main_small">
+						<img class="dish_box_star_small" src="img/star.png">
+						<!-- <p class="dish_box_text">На лазурном побережье Италии и Франции</p> -->
+					</div>
+
+					<!-- <div class="dish_main_small">
+						<img class="dish_box_star_small" src="img/star.png">
+						<p class="dish_box_text">На лазурном побережье Италии и Франции</p>
+					</div> -->
+					<div class="dish_main_img">
+						<img src="img/main_img.png">
+					</div>
+					<div class="dish_box_24_small">
+							<p class="dish_box_24_text">Принимаем заказы за 2 дня</p>	
+						</div>
+					<div class="dish_box">
+						<a href="#plov"><div class="dish_item">
+							<img class="dish_img" src="img/plov.png">
+							<p class="dish_text">Плов</p>
+							<img  class="dish_arrow" src="img/arrow_selector.png">	
+						</div></a>
+						<a href="#manty"><div class="dish_item">
+							<img class="dish_img" src="img/manty.png">
+							<p class="dish_text">Манты</p>
+							<img class="dish_arrow" src="img/arrow_selector.png">	
+						</div></a>
+						<a href="#kazan"><div class="dish_item">
+							<img class="dish_img" src="img/kazan_bob.png">
+							<p class="dish_text">Казан-кабоб</p>
+							<img class="dish_arrow" src="img/arrow_selector.png">	
+						</div></a>
+						<a href="#piknik"><div class="dish_item">
+							<img class="dish_img" src="img/piknik.png">
+							<p class="dish_text">Пловный пикник</p>
+							<img class="dish_arrow" src="img/arrow_selector.png">	
+						</div></a>					
+					</div>	
+				</div>
+			</div>	
+			<div class="dish_box_bottom">
+					<div class="dish_box_wrapper">
+						<!-- <div class="dish_box_left">
+							<p class="dish_box_text">На лазурном побережье Италии и Франции</p>
+							<img class="dish_box_star" src="img/star.png">	
+						</div>  -->
+						<a href="#plov">
+						<div class="dish_box_order" data-product="не выбрано" data-amount="" data-type="" data-beef="" data-volume="" data-service="" data-cost="">
+							<p class="dish_box_order_text">Сделать заказ</p>
+							<img class="dish_box_arrow" src="img/arrow_zakaz.png">	
+						</div>
+						</a>	
+					</div>
+					<div class="dish_box_wrapper">
+						<div class="dish_box_line">
+							<img class="dish_line" src="img/line.svg">	
+						</div>
+						<div class="dish_box_24">
+							<p class="dish_box_24_text">Принимаем заказы за 2 дня</p>	
+						</div>	
+					</div>
+				</div>		 
+		</div>
+	</section>
+	<section class="select_main">
+		<div class="container">
+			<div class="select_head" id="plov">
+				<h2>Выбери <span>свой плов</span></h2>
+				<p>Мы готовим плов и доставляем в казанах на любые мероприятия. Мы привезем плов с пылу с жару прямо к вашему столу, выложим в красивую расписную посуду в соответствиями с традициями национальной кухни</p>
+			</div>
+			<div id="select_one" class="activated" data-value="Плов">
+				<div class="select_form">
+					<div class="select_left">
+						<img  class="select_left_small" src="img/plov_main.png">
+						<div class="select_bottom  select_left_3">
+							<div class="select_kazan select_choise">
+								<img src="img/kazan_select.svg">
+								<p>Казан</p>
+							</div>
+							<div class="select_kazan" id="select_next">
+								<img src="img/portion_select.svg">
+								<p>Порция</p>
+							</div>	
+						</div>
+					</div>
+					<div  class="select_right">
+						<h4>Выберите тип плова:</h4>
+						<div class="select_right_input">
+							<div class="select_kazan_right select_kazan_right_choise" id="plov_kazan_celebr" data-value="Праздничный">
+								<p>Праздничный (свадебный) Ташкентский</p>
+								<p><span>баранина/ говядина от мясника, рис ЛАЗЕР Узбекистан, морковь желтая Узбекистан, изюм, нут, специи</span></p>
+							</div>
+							<div class="select_kazan_right" id="plov_kazan_chaikhana" data-value="Чайханский">
+								<p>Чайханский (Фреганский)</p>
+								<p><span>баранина/ говядина от мясника, рис ЛАЗЕР Узбекистан, морковь желтая, чеснок, специи</span></p>	
+							</div>	
+						</div>
+						<h4>Выберите тип мяса:</h4>
+						<div class="select_right_beef">
+							<div class="select_right_beef_input select_choise plov_type" id="plov_kazan_beef" data-value="Говядина">
+								<img src="img/beef_select.svg">
+								<p>Говядина</p>
+							</div> 
+							<div class="select_right_beef_input plov_type" id="plov_kazan_lamb"  data-value="Баранина">
+								<img src="img/lamb_select.svg">
+								<p>Баранина</p>
+							</div>	
+						</div>
+						<h4>Выберите объем казана:</h4>
+						<div class="select_right_beef select_right_volume">
+							<div class="select_right_beef_input plov_volume" id="plov_kazan_12" data-value="12">
+								<p>3.6 кг = 12 порций</p>
+							</div>
+							<div class="select_right_beef_input plov_volume select_choise" id="plov_kazan_24" data-value="24">
+								<p>6.5 кг = 24 порций</p>
+							</div>	
+						</div>
+						<h4>Приготовим у вас:</h4>
+						<div class="select_right_cooking"  id="plov_kazan_cooking" data-value="100">
+								<img src="img/toggle_off.svg" class="select_cooking_img">
+								<img src="img/toggle_on.svg" class="select_cooking_img_on hidden">
+								<p class="select_right_cooking_price">+100 EU</p>
+								<p  class="select_right_cooking_text">Услуга приготовления плова на вашей территории (стоимость и даты) оговаривается по WhatsApp</p>						
+						</div>
+						<p  class="select_right_cooking_text_small">Услуга приготовления плова на вашей территории (стоимость и даты) оговаривается по WhatsApp</p>
+						<div class="select_order">
+							<div class="select_box">
+								<p class="select_box_text">Стоимость:</p>
+								<p class="select_box_cost"><span id="select_right_cost">250</span> EU</p>
+							</div>
+							<div class="btn_order call-btn" id="select_one_order" data-product="Плов" data-amount="Казан" data-type="Праздничный" data-beef="Говядина" data-volume="24 порций" data-service="Доставка" data-cost="250">
+								<p class="btn_order_text">Заказать</p>
+								<img class="select_box_star" src="img/arrow_zakaz.png">	
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div id="select_two" class="">	
+				<div class="select_form_second" >
+					<div class="select_left_two">
+						
+						<img  class="select_right_two_image" src="img/portion_main.png">
+						<div class="select_bottom">
+							<div class="select_kazan" id="select_prev">
+								<img src="img/kazan_select.svg">
+								<p>Казан</p>
+							</div>
+							<div class="select_kazan select_choise" >
+								<img src="img/portion_select.svg">
+								<p>Порция</p>
+							</div>	
+						</div>
+					</div>
+					<div class="select_right_two">
+						<div class="select_right_input_two">
+							<h4>Состав:</h4>
+							<h5>говядина, желтая Узбекская морковь, рис ЛАЗЕР Узбекский</h5>
+							<p class="select_right_two_head">Все продукты закупаются в местных магазинах и рынках</p>
+							<h4>Выберите количество порций</h4>
+							<div class="manty_right_scale">
+								<p>0</p>
+								<p><span id="select_right_two_value">0</span></p>
+								<p>50</p>
+							</div>
+							<div class="select_right_two_volume">
+								<input id="select_right_two_volume_value" class="manty_range" type="range" min="1" max="50" steps="1" value="0">
+							</div>
+							<!-- <p class="select_right_two_scale_text">В одной порции: 6 шт.</p> -->
+							<h5 class="select_right_two_warning"><span>ВНИМАНИЕ:</span> доставка порционного плова в Монако и города Лазурного побережья Франции осуществляется только четвергам с 12:30 до 14:30</h5>
+							<!-- <p class="select_right_two_area">По районам: Сан-Ремо, Империя, Оспедалетти и Бордигера</p> -->
+							<div class="select_right_two_order">
+								<div class="select_box">
+									<p class="select_box_text">Стоимость:</p>
+									<p class="select_box_cost"><span id="select_right_two_cost">0</span> EU</p>
+								</div>
+								<div class="btn_order call-btn" id="select_two_order" data-product="Плов" data-amount="Порция" data-type="" data-beef="" data-volume="0 порций" data-service="" data-cost="0">
+									<p class="btn_order_text">Заказать</p>
+									<img class="select_box_star" src="img/arrow_zakaz.png">	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</section>
+ 	<section class="manty">
+		<div  class="container">
+			<div class="manty_head" id="manty">
+				<h2><span>Манты</span> - готовятся непосредственно под заказ</h2>
+				<!-- <p>Манты доставляем ежедневно по городам Бордигера, Оспедалетти, СанРемо, Империя. Доставка на лазурное побережье Франции вторник и пятница</p> -->
+			</div>
+			<div class="manty_form">
+				<div class="manty_left">
+					<img class="manty_image" src="img/manty_main.png">
+				</div>
+				<div  class="manty_right">
+					<div  class="manty_right_number">
+						<h4>Выберите количество порций</h4>
+						<div class="manty_right_scale">
+							<p>0</p>
+							<p><span id="manty_kazan_value">0</span></p>
+							<p>50</p>
+						</div>
+						<div class="manty_kazan_volume">
+							<input id="manty_kazan_volume_value" class="manty_range" type="range" min="0" max="50" steps="1" value="0">
+						</div>
+						<p class="manty_right_scale_text">В одной порции: 6 шт.</p>
+					</div>
+					<h5>Выберите тип мяса:</h5>
+					<div class="manty_right_beef">
+						<div class="manty_right_beef_input manty_type select_choise" id="manty_portion_beef">
+							<img src="img/beef_select.svg">
+							<p>Говядина</p>
+						</div>
+						<div class="manty_right_beef_input manty_type" id="manty_portion_lamb">
+							<img src="img/lamb_select.svg">
+							<p>Баранина</p>
+						</div>	
+					</div>
+					<h5>В каком виде привезти манты:</h5>
+					<div class="manty_right_beef">
+						<div class="manty_right_beef_input manty_kind select_choise" id="manty_portion_hot">
+							<img src="img/cooking_manty.svg">
+							<p>Приготовленные</p>
+						</div>
+						<div class="manty_right_beef_input manty_kind" id="manty_portion_frozen">
+							<img src="img/frozen_manty.svg">
+							<p>Замороженные</p>
+						</div>	
+					</div>
+					<div class="select_order">
+						<div class="select_box">
+							<p class="select_box_text">Стоимость:</p>
+							<p class="select_box_cost"><span id="manty_cost">0</span> EU</p>
+						</div>
+						<div class="btn_order call-btn" id="manty_order" data-product="манты" data-amount="" data-type="Приготовленные" data-beef="Говядина" data-volume="0 порций" data-service="" data-cost="0">
+							<p class="btn_order_text">Заказать</p>
+							<img class="select_box_star" src="img/arrow_zakaz.png">	
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>	
+	</section>
+	<section class="kazan">
+		<div  class="container">
+			<div class="kazan_head" id="kazan">
+				<h2>Выбери свой <span>Казан-кабоб</span></h2>
+				<p>Мясо с деревенским картофелем готовится на открытом огне и доставляется в казанах прямо к столу, после чего выкладывается в красивую расписную посуду в соответствии с традициями национальной кухни</p>
+			</div>
+			<div id="kazan_one" class="activated">
+				<div class="kazan_form">
+					<div class="kazan_left">
+						<img class="kazan_image" src="img/kazan_main.png">
+						<div class="select_bottom">
+							<div class="select_kazan">
+							<!-- <div class="select_kazan" id="kazan_next"> -->
+								<img src="img/kazan_select.svg">
+								<p>Казан</p>
+							</div>
+							<!-- <div class="select_kazan select_choise">
+								<img src="img/portion_select.svg">
+								<p>Порция</p>
+							</div> -->	
+						</div>
+					</div>
+					<div  class="kazan_right">
+						<div class="kazan_right_head">
+							<h4>Состав:</h4>
+							<p>мясо, картофель, растительное масло, соль, специи</p>	
+						</div>
+						<h5>Выберите тип мяса:</h5>
+						<div class="kazan_right_beef">
+							<div class="kazan_right_beef_input kabob_portion_type select_choise" id="kabob_portion_beef">
+								<img src="img/beef_select.svg">
+								<p>Говядина</p>
+							</div>
+							<div class="kazan_right_beef_input kabob_portion_type" id="kabob_portion_lamb">
+								<img src="img/lamb_select.svg">
+								<p>Баранина</p>
+							</div>
+							<div class="kazan_right_beef_input kabob_portion_type" id="kabob_portion_chicken">
+								<img src="img/chicken_kazan.svg">
+								<p>Курица</p>
+							</div>	
+						</div>
+						<div  class="kazan_right_number">
+							<!-- <h4>Выберите объем казана:</h4>
+							<div class="kazan_right_volume_wrap">
+								<div class="kazan_right_volume kabob_portion_number" id="kabob_portion_2" data-value="12">
+									<p>2.5 кг</p>
+								</div>
+								<div class="kazan_right_volume kabob_portion_number select_choise" id="kabob_portion_5" data-value="24">
+									<p>5 кг</p>
+								</div>	
+							</div> --> 
+							<h4>Приготовим у вас:</h4>
+							<div class="kazan_right_cooking" id="kabob_portion_cooking">
+									<img class="kabob_cooking_img" src="img/toggle_off.svg">
+									<img class="kabob_cooking_img_on hidden" src="img/toggle_on.svg">
+									<p class="select_right_cooking_price">+100 EU</p>
+									<p  class="select_right_cooking_text">Услуга приготовления плова на вашей территории (стоимость и даты) оговаривается по WhatsApp</p>						
+							</div>
+							<p  class="select_right_cooking_text_small">Услуга приготовления плова на вашей территории (стоимость и даты) оговаривается по WhatsApp</p>
+						</div>
+						<div class="select_order">
+							<div class="select_box">
+								<p class="select_box_text">Стоимость:</p>
+								<p class="select_box_cost"><span id="kabob_right_cost">100</span> EU</p>
+							</div>
+							<div class="btn_order call-btn" id="kabob_two_order" data-product="Кабоб" data-amount="Казан" data-type="" data-beef="Говядина" data-volume="2 кг" data-service="Доставка" data-cost="100">
+								<p class="btn_order_text">Заказать</p>
+								<img class="select_box_star" src="img/arrow_zakaz.png">	
+							</div>
+						</div>	
+					</div>
+					<!-- <div  class="kazan_right">
+						<div class="kazan_right_head">
+							<h4>Состав:</h4>
+							<p>мясо, картофель, растительное масло, соль, специи</p>	
+						</div>
+						<h5>Выберите тип мяса:</h5>
+						<div class="kazan_right_beef">
+							<div class="kazan_right_beef_input kabob_kazan_type select_choise" id="kabob_kazan_beef">
+								<img src="img/beef_select.svg">
+								<p>Говядина</p>
+							</div>
+							<div class="kazan_right_beef_input kabob_kazan_type" id="kabob_kazan_lamb">
+								<img src="img/lamb_select.svg">
+								<p>Баранина</p>
+							</div>
+							<div class="kazan_right_beef_input kabob_kazan_type" id="kabob_kazan_chicken">
+								<img src="img/chicken_kazan.svg">
+								<p>Курица</p>
+							</div>	
+						</div>
+						<div  class="kazan_right_number">
+							<h4>Выберите количество порций</h4>
+							<div class="kazan_right_scale">
+								<p>0</p>
+								<p><span id="kabob_kazan_value">0</span></p>
+								<p>50</p>
+							</div>
+							<div class="kazan_kazan_volume">
+								<input id="kabob_kazan_volume_value" class="manty_range" type="range" min="1" max="50" steps="1" value="0">
+							</div>
+							<p class="kazan_right_scale_text">В одной порции 320 грамм</p>
+						</div> -->
+						<!-- <div class="select_order">
+							<div class="select_box">
+								<p class="select_box_text">Стоимость:</p>
+								<p class="select_box_cost"><span id="kazan_right_cost">0</span> EU</p>
+							</div>
+							<div class="btn_order call-btn" id="kabob_one_order" data-product="Кабоб" data-amount="Порция" data-type="" data-beef="Говядина" data-volume="0 порций" data-service="" data-cost="0">
+								<p class="btn_order_text">Заказать</p>
+								<img class="select_box_star" src="img/arrow_zakaz.png">	
+							</div>
+						</div>	
+					</div> -->
+				</div>
+			</div>
+			<!-- <div id="kazan_two" class="">
+				<div class="kazan_form">
+					<div class="kazan_left">
+						<img class="kazan_image" src="img/kazan_main_second.png">
+						<div class="select_bottom">
+							<div class="select_kazan select_choise">
+								<img src="img/kazan_select.svg">
+								<p>Казан</p>
+							</div>
+							<div class="select_kazan" id="kazan_prev">
+								<img src="img/portion_select.svg">
+								<p>Порция</p>
+							</div>	
+						</div>
+					</div>
+					<div  class="kazan_right">
+						<div class="kazan_right_head">
+							<h4>Состав:</h4>
+							<p>мясо, картофель, растительное масло, соль, специи</p>	
+						</div>
+						<h5>Выберите тип мяса:</h5>
+						<div class="kazan_right_beef">
+							<div class="kazan_right_beef_input kabob_portion_type select_choise" id="kabob_portion_beef">
+								<img src="img/beef_select.svg">
+								<p>Говядина</p>
+							</div>
+							<div class="kazan_right_beef_input kabob_portion_type" id="kabob_portion_lamb">
+								<img src="img/lamb_select.svg">
+								<p>Баранина</p>
+							</div>
+							<div class="kazan_right_beef_input kabob_portion_type" id="kabob_portion_chicken">
+								<img src="img/chicken_kazan.svg">
+								<p>Курица</p>
+							</div>	
+						</div>
+						<div  class="kazan_right_number">
+							<h4>Выберите объем казана:</h4>
+							<div class="kazan_right_volume_wrap">
+								<div class="kazan_right_volume kabob_portion_number" id="kabob_portion_2" data-value="12">
+									<p>2.5 кг</p>
+								</div>
+								<div class="kazan_right_volume kabob_portion_number select_choise" id="kabob_portion_5" data-value="24">
+									<p>5 кг</p>
+								</div>	
+							</div> 
+							<h4>Приготовим у вас:</h4>
+							<div class="kazan_right_cooking" id="kabob_portion_cooking">
+									<img class="kabob_cooking_img" src="img/toggle_off.svg">
+									<img class="kabob_cooking_img_on hidden" src="img/toggle_on.svg">
+									<p class="select_right_cooking_price">+100 EU</p>
+									<p  class="select_right_cooking_text">Услуга приготовления плова на вашей территории (стоимость и даты) оговаривается по WhatsApp</p>						
+							</div>
+							<p  class="select_right_cooking_text_small">Услуга приготовления плова на вашей территории (стоимость и даты) оговаривается по WhatsApp</p>
+						</div>
+						<div class="select_order">
+							<div class="select_box">
+								<p class="select_box_text">Стоимость:</p>
+								<p class="select_box_cost"><span id="kabob_right_cost">250</span> EU</p>
+							</div>
+							<div class="btn_order call-btn" id="kabob_two_order" data-product="Кабоб" data-amount="Казан" data-type="" data-beef="Говядина" data-volume="5 кг" data-service="Доставка" data-cost="250">
+								<p class="btn_order_text">Заказать</p>
+								<img class="select_box_star" src="img/arrow_zakaz.png">	
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div> -->
+			
+		</div>	
+	</section>
+ 	<section class="about">
+		<div  class="container">
+			<div class="about_head">
+				<h2>Настоящий аутентичный вкус нашим блюдам придают продукты и специи <span>купленные и привезенные непосредственно из Узбекистана</span></h2>
+				<div class="about_wrapper">
+					<img src="img/noun-meat.svg">
+					<p>Мясо мы покупаем у мясника за час до приготовления</p>
+				</div>
+			</div>
+			
+		</div>	
+	</section> 
+	<footer class="footer" id="piknik">
+		<div class="container">
+			<div class="footer_head">
+				<h2>Пловный пикник</h2>
+				<h3>Что может быть лучше свежего морского или горного воздуха, компании близких, родных людей и аромата настоящего плова...</h3>
+				<p>На наших фирменных мероприятиях мы готовим плов праздничный/чайханский, манты/долма, напитки, дегустируем локальные фермерские продукты: сыр, фрукты и разнообразные вина</p>
+				<div class="btn_footer">
+					<p class="btn_footer_text btn_full">Афиша ближайших пикников</p>
+					<p class="btn_footer_text btn_small">Заказать</p>
+					<img class="footer_box_star" src="img/arrow_zakaz.png">	
+				</div>
+			</div>
+		</div>
+		<a href="#"><p class="footer_policy">Политика конфиденциальности</p></a>
+	</footer>
+
+	<div id="myModal">
+		<div class="container">
+			<div class="language-menu">
+				<a href="index.html">
+					<div class=" additional">
+						<p class="language_text">It</p>
+					</div>
+				</a>
+				<a href="index_ru.html">
+					<div class=" additional">
+						<p class="language_text">Ru</p>
+					</div>
+				</a>
+				<a href="index_en.html">
+					<div class=" additional">
+						<p class="language_text">En</p>
+					</div>
+				</a>
+				<a href="index_fr.html">
+					<div class=" additional">
+						<p class="language_text">Fr</p>
+					</div>
+				</a>			
+			</div>
+			<div id="popup" class="popup">
+				<span id="myModal__close" class="popup_close"><img src="img/sign_close.svg"></span>
+		  		<div class="wrapper-form">
+		  			<div class="popup_head">
+		  				<h3>Завершите заказ</h3>
+		  				<p>Заказы принимаются не ранее, чем за 2 дня</p>
+		  			</div>
+		  			<form action="#" class="modal_form">
+		  				<div class="form_popup_wrapper">
+			  				<div  class="form_popup_left">
+			  					<h4>Ваше имя</h4>
+								<input class="form_popup_input form_popup_input_name" type="text" placeholder="Ваше имя" >
+								<h4>Номер телефона</h4>
+								<input class="form_popup_input form_popup_input_phone" type="tel" placeholder="Ваш телефон" required>
+								<h4>Куда привести?</h4>
+								<input class="form_popup_input form_popup_input_address" type="text" placeholder="Адрес доставки" required>
+			  				</div>
+			  				<div  class="form_popup_right">
+			  					<div class="form_popup_right_top">
+			  						<div>
+				  						<div class="form_popup_icon">
+				  							<img src="img/sign_date.svg">
+				  							<h4>Дата доставки</h4>
+				  						</div>	
+										<input class="form_popup_date" type="date" placeholder="Ваш телефон" required>
+			  						</div>
+			  						<div>
+			  							<div class="form_popup_icon">
+				  							<img src="img/sign_time.svg">
+				  							<h4>Время доставки</h4>		
+				  						</div>
+			  							<input class="form_popup_time" type="time" placeholder="Время доставки" required>	
+			  						</div>	
+			  					</div>
+			  					<textarea id="final_order" class="hidden"  name="ordertext" rows="2" cols="46" ></textarea>
+			  					<h4>Комментарий к заказу</h4>
+			  					<textarea class="form_popup_text" name="textarea" rows="10" cols="46" ></textarea>	
+			  				</div>
+			  			</div>
+			  			<div class="form_popup_order">
+							<div class="select_box">
+								<p class="select_box_text">Стоимость:</p>
+								<p class="select_box_cost"><span id="final_cost">250</span> EU</p>
+							</div>
+							<button type="submit" class="modal-form-btn btn_order">
+									<p class="form_popup_btn_text">Заказать</p>
+									<img class="form_popup_btn_star" src="img/arrow_zakaz.png">	
+							</button>
+						</div>	
+					</form>
+		   		</div>
+			</div>
+		</div>
+	</div>
+	<div id="myOverlay"></div>
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/main.js"></script>	
+</body>
+</html>
